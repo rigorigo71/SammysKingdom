@@ -1,0 +1,31 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html,
+body,
+#app,
+.overlay{
+    height:100%;
+}
+body{
+    background-color:#cc0000;
+    /* black hexcode: #000000 */
+}
+#app,
+.overlay{
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+}
+#app{
+    transform-style: preserve-3d;
+    overflow:hidden;
+    z-index:-2;
+}
+.overlay{
+    z-index:-1;
+    pointer-events:none;
+}
