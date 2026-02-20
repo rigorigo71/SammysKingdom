@@ -1,31 +1,73 @@
-*{
-    margin:0;
-    padding:0;
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
+
 html,
 body,
 #app,
-.overlay{
-    height:100%;
+.overlay {
+    height: 100%;
 }
-body{
-    background-color:#cc0000;
+
+body {
+    background-color: #cc0000;
     /* black hexcode: #000000 */
 }
+
 #app,
-.overlay{
+.overlay {
     position: fixed;
-    top:0;
-    left:0;
-    width:100%;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
-#app{
+
+#app {
     transform-style: preserve-3d;
-    overflow:hidden;
-    z-index:-2;
+    overflow: hidden;
+    z-index: -2;
 }
-.overlay{
-    z-index:-1;
-    pointer-events:none;
+
+.overlay {
+    z-index: -1;
+    pointer-events: none;
+}
+
+.star {
+    transform: translate(-50%);
+    animation: shake .5s linear forwards;
+}
+.star-1 { filter: brightness(0) saturate(100%) invert(85%) sepia(30%) saturate(500%) hue-rotate(300deg); } /* bubblegum pink #FFB3DE */
+.star-2 { filter: brightness(0) saturate(100%) invert(75%) sepia(40%) saturate(400%) hue-rotate(220deg); } /* lavender purple #B8A9FF */
+.star-3 { filter: brightness(0) saturate(100%) invert(90%) sepia(60%) saturate(600%) hue-rotate(10deg); }  /* sparkle gold #FFD700 */
+.star-4 { filter: brightness(0) saturate(100%) invert(80%) sepia(30%) saturate(500%) hue-rotate(310deg); } /* cotton candy #FF9ECD */
+.star-5 { filter: brightness(0) saturate(100%) invert(85%) sepia(20%) saturate(400%) hue-rotate(120deg); } /* mint green #A8E6CF */
+
+@keyframes shake {
+
+    0%,
+    50%,
+    70% {
+        transform: rotate3d(1, -1, 1, 40deg)
+    }
+
+    20%,
+    30%,
+    80% {
+        transform: rotate3d(0, 1, 1, -60deg)
+    }
+
+    10%,
+    40%,
+    90% {
+        transform: rotate3d(-1, 1, 1, 60deg)
+    }
+
+    5%,
+    70%,
+    100% {
+        transform: rotate3d(1, 1, 1, 90deg);
+    }
 }
