@@ -38,8 +38,8 @@ body {
 .star {
     transform: translate(-50%);
     animation: shake .5s linear forwards;
-    width: 2.5vw;
-    height: 2.5vh;
+    width: 3.5vw;
+    height: 3.5vh;
 }
 .star-1 { filter: brightness(0) saturate(100%) invert(85%) sepia(30%) saturate(500%) hue-rotate(300deg); } /* bubblegum pink #FFB3DE */
 .star-2 { filter: brightness(0) saturate(100%) invert(75%) sepia(40%) saturate(400%) hue-rotate(220deg); } /* lavender purple #B8A9FF */
