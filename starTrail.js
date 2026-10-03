@@ -17,7 +17,7 @@ function createStar(x, y) {
 `
     )
     root.appendChild(star);
-    setTimeout(() => star.remove(), 500);
+    setTimeout(() => star.remove(), 250);
     return star;
 }
 window.addEventListener("mousemove", (e) => {
