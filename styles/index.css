@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 @font-face {
@@ -41,11 +40,32 @@ body,
     transform: translate(-50%);
     animation: shake .5s linear forwards;
 }
-.star-1 { filter: brightness(0) saturate(100%) invert(85%) sepia(30%) saturate(500%) hue-rotate(300deg); } /* bubblegum pink #FFB3DE */
-.star-2 { filter: brightness(0) saturate(100%) invert(75%) sepia(40%) saturate(400%) hue-rotate(220deg); } /* lavender purple #B8A9FF */
-.star-3 { filter: brightness(0) saturate(100%) invert(90%) sepia(60%) saturate(600%) hue-rotate(10deg); }  /* sparkle gold #FFD700 */
-.star-4 { filter: brightness(0) saturate(100%) invert(80%) sepia(30%) saturate(500%) hue-rotate(310deg); } /* cotton candy #FF9ECD */
-.star-5 { filter: brightness(0) saturate(100%) invert(85%) sepia(20%) saturate(400%) hue-rotate(120deg); } /* mint green #A8E6CF */
+
+.star-1 {
+    filter: brightness(0) saturate(100%) invert(85%) sepia(30%) saturate(500%) hue-rotate(300deg);
+}
+
+/* bubblegum pink #FFB3DE */
+.star-2 {
+    filter: brightness(0) saturate(100%) invert(75%) sepia(40%) saturate(400%) hue-rotate(220deg);
+}
+
+/* lavender purple #B8A9FF */
+.star-3 {
+    filter: brightness(0) saturate(100%) invert(90%) sepia(60%) saturate(600%) hue-rotate(10deg);
+}
+
+/* sparkle gold #FFD700 */
+.star-4 {
+    filter: brightness(0) saturate(100%) invert(80%) sepia(30%) saturate(500%) hue-rotate(310deg);
+}
+
+/* cotton candy #FF9ECD */
+.star-5 {
+    filter: brightness(0) saturate(100%) invert(85%) sepia(20%) saturate(400%) hue-rotate(120deg);
+}
+
+/* mint green #A8E6CF */
 
 @keyframes shake {
 
@@ -77,23 +97,69 @@ body,
 
 body {
     background-color: #7f0000;
+    margin: 0px;
+    padding: 0px;
+    min-height: 100vh;
+    width: 100vw;
     /* black hexcode: #000000 */
 }
-h1{
+
+h1 {
     font-family: 'FUNKHOUS', 'Times New Roman', Times, serif;
-    color:pink;
+    color: pink;
     text-shadow: 2px 2px 10px red;
-    margin-left:2vw;
-    margin-top:2vh;
+    margin-left: 2vw;
+    margin-top: 10;
 }
-.BratzPoint{
-    display:block;
-    margin-left:45px;
-    margin-top:auto;
-    width:60px;
-    height:auto;
+
+p {
+    margin-left: 0px;
 }
-.greeting{
-    margin-left:50px;
+
+ul {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1rem;
+    margin: 10px;
+    list-style: none;
+    margin-right: 2vw;
+}
+
+li a:visited{
+    color:darkred;
+}
+
+li a:hover{
+    text-shadow: 2px 2px 10px purple;
+}
+
+.navbar{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    background-color: black;
+    height: 10vh;
+    width: 100vw;
+    padding: 0.5rem;
+}
+
+.content{
+    margin-top: calc(10vh + 1rem);
+    padding: 0 2vw;
+}
+
+.content .BratzPoint {
+    display: flex;
+    margin-left: 1px;
+    margin-top: auto;
+    float: left;
+    width: 60px;
+    height: auto;
+}
+
+.content .greeting {
+    margin-left: 125px;
     font-family: "FUNKHOUS";
 }
