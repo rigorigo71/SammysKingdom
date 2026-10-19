@@ -118,7 +118,7 @@ p {
 
 ul {
     display: flex;
-    justify-content: space-evenly;
+    
     gap: 1rem;
     margin: 10px;
     list-style: none;
@@ -137,7 +137,6 @@ li a:hover{
     display:flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
     top: 0;
     background-color: black;
     height: 10vh;
@@ -145,13 +144,12 @@ li a:hover{
     padding: 0.5rem;
 }
 
-.content{
+/* .content{
     margin-top: calc(10vh + 1rem);
     padding: 0 2vw;
-}
+} */
 
-.content .BratzPoint {
-    display: flex;
+.BratzPoint {
     margin-left: 1px;
     margin-top: auto;
     float: left;
@@ -159,7 +157,7 @@ li a:hover{
     height: auto;
 }
 
-.content .greeting {
+.greeting {
     margin-left: 125px;
     font-family: "FUNKHOUS";
 }
